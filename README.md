@@ -17,7 +17,9 @@ It provides:
 Galvanic isolation
 High power density
 Bidirectional energy flow capability
+
 🔧 System Specifications
+
 Parameter	Value
 Input Voltage ($V_{in}$)	24 V
 Output Voltage ($V_{out}$)	96 V
@@ -26,37 +28,47 @@ Switching Frequency ($f_{sw}$)	100 kHz
 Transformer Turns Ratio ($n$)	1:4
 
 🛠️ Technical Features
+
 🔹 Realistic Modeling
+
 Includes parasitic elements and internal resistances ($0.1\ \Omega$)
 Captures non-ideal effects such as losses and damping
 Provides closer approximation to real hardware behavior
 
 🔹 Control Strategy
+
 Closed-loop PID controller
 Controls the phase shift ratio ($d$) in SPS modulation
 Maintains stable 96 V output under varying load conditions
 
 🔹 Bidirectional Operation
+
 Supports both:
 Forward power transfer
 Reverse power transfer (V2G mode)
 Direction controlled via phase shift polarity
 
 📊 Simulation Results (PLECS)
+
 The system performance is validated through PLECS simulations.
 
 ✅ Steady-State Performance
+
 Output voltage error < 0.1% at nominal load
 
 ⚡ Dynamic Response
+
 Stable under sudden load changes:
 From 200 Ω → 100 Ω
 Controller compensates voltage drops caused by parasitics
 
 🔄 V2G Mode
+
 Bidirectional power flow successfully demonstrated
 Energy transferred from secondary (110 V) back to primary side
+
 📂 Repository Structure
+
 /Simulation   -> PLECS model files (.plecs)
 /Docs         -> Detailed technical report (Turkish)
 /Figures      -> Waveforms and simulation results
