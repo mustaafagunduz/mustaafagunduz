@@ -55,6 +55,7 @@ Energy transferred from secondary (110 V) back to primary side
 /Simulation   -> PLECS model files (.plecs)
 /Docs         -> Detailed technical report (Turkish)
 /Figures      -> Waveforms and simulation results
+
 📚 References
 
 This work is based on well-established literature in isolated bidirectional converters, including:
